@@ -1,5 +1,5 @@
 nav {
-    background-color: #d3135a;
+    background-color: $pink;
     padding: 20px 70px;
     display: flex;
     flex-wrap: wrap;
@@ -27,8 +27,8 @@ ul {
     a:hover {
         color: #333;
     }
-    // ------------------
-    .triangle {
+}
+.triangle {
         width: 100px;
         height: 100px;
         background-color: #4d4d4d;
@@ -36,14 +36,12 @@ ul {
         transform: rotate(45deg);
         top: 48px;
     }
-}
-// -------------------
 .dropdown-list {
     position: absolute;
     background-color: #4d4d4d;
-    width: 150px;
+    width: 160px;
     left: -24px;
-    top: 39px;
+    top: 41px;
     li {
         padding: 10px 6px 5px 8px;
     }
@@ -72,22 +70,22 @@ ul {
     h1 {
         margin: 0;
         font-size: 48px;
-        color: #ffc2dd;
+        color: $light-pink;
     }
 }
 .nav-top-list {
     text-align: right;
     a {
-        color: black;
+        color: #000;
         text-decoration: none;
         font-size: 16px;
         margin-left: 12px;
     }
 }
-.menu-toggle {
+.menuTrigger-responsive {
     align-self: flex-end;
     margin-left: 20px;
-    color: #ffc2dd;
+    color: $light-pink;
     display: none;
     cursor: pointer;
     .material-icons {

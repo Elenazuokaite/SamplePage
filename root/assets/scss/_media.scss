@@ -11,7 +11,7 @@
     .page-right-wrap {
         padding: 0;
         display: flex;
-        .top {
+        .aside-text {
             flex: 40%;
             padding-right: 20px;
         }
@@ -29,32 +29,31 @@
         p {
             flex: 100%;
             padding: 12px 18px;
-    
         }
     }
     nav {
         padding: 20px 40px;
     }
     .flex-wraper {
-        padding: 36px 40px 20px 40px;
+        padding: 36px 20px 20px;
     }
     footer {
-        padding: 20px 40px;
+        padding: 20px;
     }
 }
 @media screen and (max-width: 715px) {
     .page-left {
-       .small-article {
-        flex: 100%;
-        margin: 0 0 20px 0;
-    } 
+        .small-article {
+            flex: 100%;
+            margin: 0 0 20px 0;
+        } 
     }
     .page-bottom {
         margin: 0;
     }
     .page-right-wrap {
         flex-wrap: wrap;
-        .top {
+        .aside-text {
             flex: 100%;
             padding-right: 20px;
         }
@@ -66,14 +65,14 @@
        .footer-info {
         flex: 100%;
     }
-    .footer-heading {
-        flex: 100%;
-        margin-top: 20px;
-        
-    } 
-    h3 {
-text-align: left;
-    }
+        .footer-heading {
+            flex: 100%;
+            margin-top: 20px;
+            
+        } 
+        h3 {
+            text-align: left;
+        }
     }
     
 }
@@ -95,17 +94,17 @@ text-align: left;
 }
 
 @media screen and (max-width: 512px) {
-    .menu-toggle {
+    .menuTrigger-responsive {
         display: block;
     }
     .nav-header {
     justify-content: center;
     }
     .nav-content {
-  display: none;
+    display: none;
     position: absolute;
     top: 115px;
-    background-color: #d3135a;
+    background-color: $pink;
     left: 0;
     right: 0;
     }
@@ -124,24 +123,17 @@ text-align: left;
             }
         }
     .dropdown-list {
-    position: absolute;
-    background-color: #4d4d4d;
-    width: 150px;
-    left: 32%;
-    top: 42px;
-    z-index: 10;
-}
-.nav-bottom-list {
+        left: 32%;
+        top: 42px;
+        z-index: 10;
+    }
     .triangle {
-   width: 50px;
-    height: 50px;
-    background-color: #4d4d4d;
-    position: absolute;
-    transform: rotate(45deg);
-    top: 40px;
-    left: 42%;
-}
-}
+        width: 50px;
+        height: 50px;
+        top: 40px;
+        left: 42%;
+    }
+
 }
 @media screen and (max-width: 425px) {
     nav {

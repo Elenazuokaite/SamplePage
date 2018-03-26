@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 
 <head>
     <meta charset="UTF-8">
@@ -8,6 +8,9 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+    <!--[if (IE 9)|(IE 10)]>
+        <link rel="stylesheet" href="assets/css/backupStyle.css">
+    <![endif]-->
     <title>Sample page</title>
 </head>
 
@@ -15,7 +18,7 @@
     <nav>
         <header class="nav-header">
             <h1>The site</h1>
-            <div class="menu-toggle"><i class="material-icons menu-toggler">menu</i></div>
+            <div class="menuTrigger-responsive"><i class="material-icons menu-trigger">menu</i></div>
         </header>
         <div class="nav-content" id="main-menu">
             <div class="nav-top-list">
@@ -24,92 +27,37 @@
                 <a href="#">menu link</a>
             </div>
             <ul class="nav-bottom-list">
-                <li class="dropdown-link" onclick="toggle()">
-                    <a href="#" id="smallMenu-toggler">menu link</a>
+                <li class="dropdown-link">
+                    <a href="#" id="dropdown-trigger">menu link</a>
                     <div id="dropdown-list" class="hide">
                         <div class="triangle"></div>
                         <ul class="dropdown-list">
                             <li>
-                                <a href="#">menu link longer</a>
+                                <a href="#">Integer eget mauris</a>
                             </li>
                             <li>
-                                <a href="#">menu link longer</a>
+                                <a href="#">Pulvinar consectetur</a>
                             </li>
                             <li>
-                                <a href="#">menu link longer</a>
+                                <a href="#">Oget mauris praesent</a>
                             </li>
                             <li>
-                                <a href="#">menu link loneger</a>
+                                <a href="#">Interdum justo</a>
                             </li>
                             <li>
-                                <a href="#">menu link lonege</a>
+                                <a href="#">Nec neque fringilla</a>
                             </li>
                         </ul>
                     </div>
-
                 </li>
                 <li>
                     <a href="#">menu link</a>
-                    <!-- <div class="triangle"></div> -->
-                    <!-- <ul class="dropdown-list">
-                        <li>
-                            <a href="#">menu link</a>
-                        </li>
-                        <li>
-                            <a href="#">menu link</a>
-                        </li>
-                        <li>
-                            <a href="#">menu link</a>
-                        </li>
-                        <li>
-                            <a href="#">menu link</a>
-                        </li>
-                        <li>
-                            <a href="#">menu link</a>
-                        </li>
-                    </ul> -->
                 </li>
                 <li>
                     <a href="#">menu link</a>
-                    <!-- <div class="triangle"></div> -->
-                    <!-- <ul class="dropdown-list">
-                        <li>
-                            <a href="#">menu link</a>
-                        </li>
-                        <li>
-                            <a href="#">menu link</a>
-                        </li>
-                        <li>
-                            <a href="#">menu link</a>
-                        </li>
-                        <li>
-                            <a href="#">menu link</a>
-                        </li>
-                        <li>
-                            <a href="#">menu link</a>
-                        </li>
-                    </ul> -->
                 </li>
                 <li>
                     <a href="#">menu link</a>
-                    <!-- <div class="triangle"></div> -->
-                    <!-- <ul class="dropdown-list">
-                        <li>
-                            <a href="#">menu link</a>
-                        </li>
-                        <li>
-                            <a href="#">menu link</a>
-                        </li>
-                        <li>
-                            <a href="#">menu link</a>
-                        </li>
-                        <li>
-                            <a href="#">menu link</a>
-                        </li>
-                        <li>
-                            <a href="#">menu link</a>
-                        </li>
-                    </ul> -->
                 </li>
             </ul>
         </div>
@@ -118,27 +66,16 @@
         <div class="page-left">
             <article class="main-article">
                 <h2>Aenean ac diam nec neque fringilla</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat. </p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat. </p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat. </p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat. </p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat.
+                <p>Integer eget mauris et urna pulvinar consectetur hendrerit eget mauris. Praesent a interdum justo. Aenean ac diam nec neque fringilla cursus. Donec iaculis tortor in nunc vehicula rutrum. Integer malesuada mollis ligula at varius. </p>
+                <p>Integer eget mauris et urna pulvinar consectetur hendrerit eget mauris. Praesent a interdum justo. Aenean ac diam nec neque fringilla cursus. Donec iaculis tortor in nunc vehicula rutrum. Integer malesuada mollis ligula at varius.</p>
+                <p>Integer eget mauris et urna pulvinar consectetur hendrerit eget mauris. Praesent a interdum justo. Aenean ac diam nec neque fringilla cursus. Donec iaculis tortor in nunc vehicula rutrum. Integer malesuada mollis ligula at varius.</p>
+                <p>Integer eget mauris et urna pulvinar consectetur hendrerit eget mauris. Praesent a interdum justo. Aenean ac diam nec neque fringilla cursus. Donec iaculis tortor in nunc vehicula rutrum. Integer malesuada mollis ligula at varius.</p>
+                <p>Integer eget mauris et urna pulvinar consectetur hendrerit eget mauris. Praesent a interdum justo. Aenean ac diam nec neque fringilla cursus. Donec iaculis tortor in nunc vehicula rutrum. Integer malesuada mollis ligula at varius.
                 </p>
             </article>
             <div class="small-article">
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                     Integer eget mauris et urna pulvinar consectetur hendrerit eget mauris. Praesent a interdum justo. Aenean ac diam nec neque fringilla cursus. Donec iaculis tortor in nunc vehicula rutrum. Integer malesuada mollis ligula at varius. Dorce pila meracone.
                 </p>
             </div>
             <article class="small-article">
@@ -150,30 +87,27 @@
         </div>
         <aside class="page-right">
             <div class="page-right-wrap">
-                <div class="top">
+                <article class="aside-text">
                     <h3>Aenean ac diam nec neque fringilla</h3>
-                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-                        eu fugiat nulla pariatur.
+                    <p> Integer eget mauris et urna pulvinar consectetur hendrerit eget mauris. Praesent a interdum justo. Aenean ac diam nec neque fringilla cursus. Donec iaculis tortor in nunc vehicula rutrum. Integer malesuada mollis ligula at varius.
                     </p>
-                </div>
+                </article>
 
                 <form name="myForm" action="#" onsubmit="return validateForm()" method="post">
                     <div class="form-group">
                         <label>First name:</label>
                         <input placeholder="Enter your name" type="text" name="firstName">
-                        <span class="error">3-20 characters long, can not contain symbols</span>
+                        <span class="error nameError">Should be 3-20 characters long, can not contain symbols</span>
                     </div>
                     <div class="form-group">
                         <label>Last name:</label>
                         <input placeholder="Enter your last name" type="text" name="lastName">
-                        <span class="error">3-20 characters long, can not contain symbols</span>
+                        <span class="error lastNameError">Should be 3-20 characters long, can not contain symbols</span>
                     </div>
                     <div class="form-group">
                         <label>Message:</label>
                         <textarea name="message"></textarea>
-                        <span class="error">30-150 characters long, can not contain symbols</span>
+                        <span class="error msgError">Should be 30-150 characters long, can not contain symbols</span>
                     </div>
                     <button type="submit">SUBMIT</button>
                 </form>
@@ -181,17 +115,12 @@
 
         </aside>
         <div class="page-bottom">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat.
-            </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat.
-            </p>
+            <p>Integer eget mauris et urna pulvinar consectetur hendrerit eget mauris. Praesent a interdum justo. Aenean ac diam nec neque
+            fringilla cursus. Donec iaculis tortor in nunc vehicula rutrum. Integer malesuada mollis ligula at varius.</p>
+            <p>Integer eget mauris et urna pulvinar consectetur hendrerit eget mauris. Praesent a interdum justo. Aenean ac diam nec neque
+            fringilla cursus. Donec iaculis tortor in nunc vehicula rutrum. Integer malesuada mollis ligula at varius.</p>
+            <p>Integer eget mauris et urna pulvinar consectetur hendrerit eget mauris. Praesent a interdum justo. Aenean ac diam nec neque
+            fringilla cursus. Donec iaculis tortor in nunc vehicula rutrum. Integer malesuada mollis ligula at varius.</p>
         </div>
     </main>
     <footer>
@@ -207,9 +136,10 @@
                 <a href="#">menu link</a>
             </div>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <p>Nullam mattis luctus dolor, sed gravida tellus volutpat vel. Maecenas mollis augue sed tortor molestie ornare. Proin dapibus
+            dictum eros ut adipiscing. Nullam ultrices dolor ut tristique sollicitudin. Integer scelerisque urna est, sit amet aliquet
+            sapien accumsan quis. Nullam luctus semper vulputate. Nulla egestas urna nec tellus ultrices elementum. Proin dapibus dictum
+            eros ut adipiscing. Nullam ultrices dolor ut tristique sollicitudin. Integer scelerisque</p>
         </div>
         <div class="footer-heading">
             <h3>The Site</h3>

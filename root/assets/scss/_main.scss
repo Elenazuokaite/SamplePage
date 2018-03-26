@@ -7,6 +7,9 @@ p {
     flex-wrap: wrap;
     padding: 36px 70px 20px 70px;
     line-height: 1.4em;
+    h2, h3 {
+     font-family: $timesNewR;
+}
 }
 .page-bottom {
     flex: 100%;
@@ -28,26 +31,22 @@ p {
     flex: 30%;
     h3 {
         margin: 0;
-        font-family: 'Times New Roman', Times, serif;
         font-size: 24px;
     }
 }
 .main-article {
     background-color: #fff;
-    padding: 24px 18px;
     flex: 100%;
     margin-bottom: 20px;
     h2 {
-        margin: 0;
-        font-family: 'Times New Roman', Times, serif;
         font-size: 32px;
-        margin-bottom: 20px;
         line-height: 1em;
+        margin: 24px 18px 20px;
     }
     p {
-        margin-bottom: 30px;
         font-size: 16px;
         color: #4d4d4d;
+        margin: 0 18px 30px;
     }
 }
 .small-article {
@@ -63,7 +62,6 @@ div.small-article {
 }
 article.small-article {
     h3 {
-        font-family: 'Times New Roman', Times, serif;
         font-size: 20px;
     }
     p {
@@ -105,7 +103,7 @@ padding-left: 10px;
 }
 button {
     color: #fff;
-    background-color: #d3135a;
+    background-color: $pink;
     border: none;
     padding: 12px 24px;
     cursor: pointer;
@@ -117,4 +115,5 @@ button {
     font-style: italic;
     display: none;
     font-size: 14px;
+    line-height: initial;
 }
